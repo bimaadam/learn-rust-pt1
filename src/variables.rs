@@ -8,12 +8,12 @@ pub fn run() {
     total += 5;
     println!("Total: {}", total);
 
-    // string
-    let nama = "Bima";
+    // string slice
+    let nama: &str = "Bima";
     println!("Nama: {}", nama);
 
-    let mut full_name = String::from("Bima");
-    full_name.push_str(" Adam");
+    // build a owned String idiomatically
+    let full_name = format!("{} {}", "Bima", "Adam");
     println!("Full name: {}", full_name);
 
     // shadowing
