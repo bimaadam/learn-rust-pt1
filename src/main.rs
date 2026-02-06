@@ -1,8 +1,13 @@
 mod variables;
 mod conditions;
+mod borrowchecker;
+mod ownership;
+mod function;
 
 fn main() {
-    println!("Hello, world!");
     variables::run();
     conditions::run();
+    borrowchecker::run();
+    ownership::run();
+    function::say_hello();
 }
